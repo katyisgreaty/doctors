@@ -8,7 +8,7 @@ Doctor.prototype.getDoctors = function(medicalIssue) {
    .then(function(response) {
     //  other actions go here
     console.log("function running");
-    displayDoctors(medicalIssue, response.profile.first_name, response.profile.last_name);
+    displayDoctors(medicalIssue, response.profile.last_name);
     })
    .fail(function(error){
       console.log("fail");

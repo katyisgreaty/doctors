@@ -6,14 +6,18 @@
 </head>
 <body>
   <h1>Find a Doctor for What Ails You!</h1>
-  <form class="form-inline">
-    <div class="form-group">
-      <label for="issue">Your medical issue:</label>
-      <input class="form-control" type="issue" name="issue" id="med-issue">
-    </div>
-    <button type="submit" class="btn" id="getDoctor">Search for Doctors</button>
-  </form>
-  <div class="results">
+  <!-- <label for="issue">Your medical issue:</label>
+  <input class="form-control" type="issue" name="issue" id="med-issue">
+  <button type="submit" class="btn" id="getDoctor">Search for Doctors</button>
+  <div class="results"> -->
+
+  <form class="form-inline" id="doctor-search" method="post">
+        <div class="form-group">
+          <label for="problem">Your medical issue:</label>
+          <input class="form-control" type="problem" name="problem" id="problem">
+        </div>
+        <button type="submit" class="btn">Find Doctors</button>
+      </form>
     <h4 id="showDoctors"></h4>
   </div>
 
