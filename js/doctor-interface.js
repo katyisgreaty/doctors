@@ -1,6 +1,8 @@
 var apiKey = require('./../.env').apiKey;
 var Doctor = require('./../js/doctor.js').doctorModule;
 
+var doctorsArray = [];
+
 var displayDoctors = function(medicalIssue, doctorLastName) {
   $('#showDoctors').text("The doctors that matched your request for treatment of ");
   console.log(response);
@@ -18,10 +20,15 @@ $(document).ready(function() {
        .then(function(response) {
         //  other actions go here
         console.log("function running");
-        $('#showDoctors').text("The doctors that matched your request for treatment of " + medicalIssue + "are: " + response.data.profile.last_name);
-        })
-       .fail(function(error){
-          console.log("fail");
-        });
+        console.log(response);
+        doctorsArray.push(response);
+        console.log(doctorsArray);
+        for(var i=0; i<response.data.length; i++){
+          $('#showDoctors').text("The doctor that matched your request for treatment of " + medicalIssue + " is: Dr. " +  response.data[1].profile.last_name);
+        };
+      });
+      //  .fail(function(error){
+      //     console.log("fail");
+      //   });
     });
   });
