@@ -1,7 +1,63 @@
+body {
+  background-image: url("../../img/zen.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+$grey: #95A29B;
+$lightgreen: #DFE3E1;
+$slabo: 'Slabo 27px', serif;
+$lora: 'Lora', serif;
+$questrial: 'Questrial', sans-serif;
+
+html {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0px;
+  min-height: 100%;
+  width: 100%;
+  font-family: $lora;
+  font-size: 30px;
+}
+
+h2 {
+  color: $lightgreen;
+  font-size: 34px;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+
 .results {
   display: none;
+  background-color: $lightgreen;
+  padding-left: 12px;
 }
 
 .docName {
   font-size: 26px;
+}
+
+#getDoctor {
+  margin-top: 20px;
+  background-color: $grey;
+  border-color: white;
+}
+
+#input-box {
+  margin-top: 40px;
+}
+
+.jumbotron {
+  background-color: $grey;
+  color: white;
+  text-align: center;
+  font-size: 100px;
+  margin-top: 0px;
 }

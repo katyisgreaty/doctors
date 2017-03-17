@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="build/css/vendor.css">
+  <link href="https://fonts.googleapis.com/css?family=Lora|Questrial|Slabo+27px" rel="stylesheet">
   <script src="build/js/vendor.min.js"></script>
   <script type="text/javascript" src="build/js/app.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWk7-CXnjhrNvlrxkgZhKimljUHDxX6_E"></script>
@@ -11,12 +12,12 @@
   <title>Doctor Finder</title>
 </head>
 <body>
+  <h1 class="jumbotron">Doctor Finder</h1>
   <div class="container">
-    <h1>Doctor Finder</h1>
-    <h3>Find a doctor who can treat your specific medical issue</h3>
-    <label for="issue">Your medical issue:</label>
+    <h2>Find a doctor who can treat your specific medical issue!</h2>
+    <label id = "input-box" for="issue">Your medical issue:</label>
     <input class="form-control" type="issue" name="issue" id="med-issue">
-    <button type="submit" class="btn" id="getDoctor">Search for Doctors</button>
+    <button type="submit" class="btn btn-primary" id="getDoctor">Search for Doctors</button>
     <div class="results">
       <h4 id="showDoctors"></h4>
     </div>
