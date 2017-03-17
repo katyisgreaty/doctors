@@ -4,7 +4,7 @@ var Doctor = require('./../js/doctor.js').doctorModule;
 
 $(document).ready(function() {
   var newDoctor = new Doctor();
-  $('#getDoctor').submit(function(event){
+  $('#getDoctor').click(function(event){
     event.preventDefault();
     var medicalIssue = $('#med-issue').val();
     $('#med-issue').val("");
