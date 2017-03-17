@@ -18,7 +18,7 @@ $(document).ready(function() {
        .then(function(response) {
         //  other actions go here
         console.log("function running");
-        $('#showDoctors').text("The doctors that matched your request for treatment of ");
+        $('#showDoctors').text("The doctors that matched your request for treatment of " + medicalIssue + "are: " + response.data.profile.last_name);
         })
        .fail(function(error){
           console.log("fail");
