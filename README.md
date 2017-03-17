@@ -15,7 +15,8 @@ _This webpage allows the user to search for a doctor by inputting a specific med
 
 ## Known Bugs
 
-* Back end and front end logic not separated (it broke every time I tried).
+* Back end and front end logic not separated (it broke every time I tried)
+* If you search with a new medical issue before reloading the page, it appends those new doctors without deleting the old ones
 
 ## Support and contact details
 
