@@ -9,7 +9,7 @@
 _This webpage allows the user to search for a doctor by inputting a specific medical issue they would like help with, and it will return a list of doctors in the Portland area who can help._
 
 ## Setup/Installation Requirements
-
+ 
 * Clone the git from the repository at https://github.com/katyisgreaty/doctors.
 
 
